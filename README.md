@@ -1,4 +1,4 @@
-# Bootstrap en Regresión Lineal — Peso Vehicular vs Consumo (Auto MPG)
+# Análisis de Bootstrap y Mínimos Cuadrados Ordinarios en Regresión Lineal Simple
 
 Scripts en R que compara y análiza los resultados MCO vs Bootstrap por pares, y exploran empiricamente la estabilidad asintótica del Bootstrap (Bickel & Freedman, 1981).
 
@@ -23,21 +23,34 @@ Scripts en R que compara y análiza los resultados MCO vs Bootstrap por pares, y
 - 4.2 Distancia KS — población simulada heterocedástica
 - 4.3 Distancia KS — datos reales Auto MPG (Caso 1 y Caso 2)
 
+
+  ## Datos
+
+[auto-mpg.csv](auto-mpg.csv) — dataset Auto MPG (~398 vehículos). Variables usadas:
+
+- `mpg`: millas recorridas por galón de combustible.
+- `weight`: peso vehicular en libras.
+
+Fuente original: [UCI Machine Learning Repository — Auto MPG](https://archive.ics.uci.edu/dataset/9/auto+mpg)(Quinlan, 1993).
+
 ## Ejecución
 
 ```r
 install.packages("lmtest")
 ```
 
-Colocar `auto-mpg.csv` en el directorio de trabajo y correr los scripts en el orden listado arriba.
+Colocar `[auto-mpg.csv](auto-mpg.csv) en el directorio de trabajo y correr los scripts en el orden listado arriba.
 
 ## Requisitos
 
-R (≥ 4.0), paquete `lmtest`.
+- R (≥ 4.0)
+- Paquete `lmtest`
+- Funciones base: `lm()`, `sample()`, `quantile()`, `shapiro.test()`
 
 
+## Informe completo
 
-
+El análisis detallado, gráficos y discusión de resultados se encuentran en `proyecto_final_seminario.pdf`.
 
 
 
