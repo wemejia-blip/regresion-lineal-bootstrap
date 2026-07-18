@@ -89,6 +89,6 @@ library(lmtest)
 bptest(modelo_log1)
 
 plot(modelo_log1, col = "sandybrown", pch = 16, col.smooth = "darkblue")
-1
+
 
 
