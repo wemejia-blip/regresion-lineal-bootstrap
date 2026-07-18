@@ -18,7 +18,7 @@ Scripts en R que compara y análiza los resultados MCO vs Bootstrap por pares, y
 - 3.2 Bootstrap Caso 2: mpg ~ log(weight)
 - 3.3 Evaluación predictiva (partición 70/30: RMSE, MAE, R²)
 
-[📄 4_Consistencia_asintotica.R.R](consistencia_asintótica.R.R)
+[📄 4_Consistencia_asintotica.R](consistencia_asintótica.R.R)
 - 4.1 Distancia KS — población simulada homocedástica
 - 4.2 Distancia KS — población simulada heterocedástica
 - 4.3 Distancia KS — datos reales Auto MPG (Caso 1 y Caso 2)
