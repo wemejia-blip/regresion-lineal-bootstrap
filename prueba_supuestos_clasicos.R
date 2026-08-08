@@ -1,6 +1,12 @@
+install.packages("ISLR")   
+library(ISLR)
 
-auto1<-read.csv("auto-mpg.csv")
-auto <- na.omit(auto)
+
+head(Auto)
+
+auto <- na.omit(Auto)
+
+
 
 str(auto)
 head(auto)
@@ -69,7 +75,15 @@ abline(lm(log(mpg) ~ weight, data=auto), col="blue", lwd=2)
 #Pruebas aplicadas 
 
 modelo_log <- lm(log(mpg) ~ weight, data = auto)
-plot(modelo_log,  col = "steelblue", pch = 16)
+
+par(mfrow = c(2,2),
+    mar = c(4,4,2,1))
+
+plot(modelo_log,
+     col = "steelblue",
+     pch = 16)
+
+par(mfrow = c(1,1))
 
 
 
@@ -88,7 +102,17 @@ shapiro.test(residuals(modelo_log1))
 library(lmtest)
 bptest(modelo_log1)
 
-plot(modelo_log1, col = "sandybrown", pch = 16, col.smooth = "darkblue")
+
+
+par(mfrow = c(2,2), mar = c(4,4,2,1))
+
+plot(modelo_log1,
+     pch = 16,
+     col = "sandybrown",
+     col.smooth = "darkblue")
+
+par(mfrow = c(1,1))
+
 
 
 

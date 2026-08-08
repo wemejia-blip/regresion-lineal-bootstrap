@@ -367,8 +367,14 @@ cat("\n   • Reducción:", reduccion_total, "%\n")
 # El bootstrap se aplica directamente sobre los datos.
 # =========================================================
 
-auto1<-read.csv("auto-mpg.csv")
-auto <- na.omit(auto)
+install.packages("ISLR")   
+library(ISLR)
+
+
+
+head(Auto)
+
+auto <- na.omit(Auto)
 
 
 set.seed(123)

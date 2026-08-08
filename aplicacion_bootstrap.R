@@ -1,9 +1,14 @@
 # BOOTSTRAP - CASO 1
 # Transformación en la variable respuesta: log(mpg) ~ weight
 # ===========================================================
+install.packages("ISLR")   
+library(ISLR)
 
-auto1<-read.csv("auto-mpg.csv")
-auto <- na.omit(auto)
+
+
+head(Auto)
+
+auto <- na.omit(Auto)
 
 
 #Modelo clásico 
