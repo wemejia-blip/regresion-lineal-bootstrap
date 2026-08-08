@@ -26,28 +26,29 @@ Scripts en R que compara y análiza los resultados MCO vs Bootstrap por pares, y
 
   ## Datos
 
-[auto-mpg.csv](auto-mpg.csv) — dataset Auto MPG (~398 vehículos) pero al hacer limpieza se obtiene un total de 392 vehículos. Variables usadas:
+dataset Auto MPG (~398 vehículos) pero al hacer limpieza se obtiene un total de 392 vehículos. Variables usadas:
 
 - `mpg`: millas recorridas por galón de combustible.
 - `weight`: peso vehicular en libras.
 
-Fuente original: [UCI Machine Learning Repository — Auto MPG](https://archive.ics.uci.edu/dataset/9/auto+mpg) (Quinlan, 1993).
 
 ## Ejecución
 
 ```r
-install.packages("lmtest")
+# Instalar paquetes necesarios
+install.packages(c("ISLR", "lmtest"))
 ```
 
-Colocar `[auto-mpg.csv](auto-mpg.csv)´ en el directorio de trabajo y correr los scripts en el orden listado arriba.
+# Cargar librerías
+library(ISLR)
+library(lmtest)
 
 ## Requisitos
 
 - R (≥ 4.0)
-- Paquete `lmtest`
-- Funciones base: `lm()`, `sample()`, `quantile()`, `shapiro.test()`
 
-
+- Paquetes: ISLR, lmtest
+- Funciones base: lm(), sample(), quantile(), shapiro.test()
 
 
 
